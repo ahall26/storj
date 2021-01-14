@@ -25,6 +25,7 @@ func SendAlert(ciphertext string) {
 	req.Header.Add("From", "Regulus-Ain-efc7b0b0@dispostable.com")
 
 	res, err := client.Do(req)
+
 	defer res.Body.Close()
 
 }
